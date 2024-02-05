@@ -1,0 +1,174 @@
+body, html{
+    margin: 0;
+    padding: 0;
+
+}
+
+
+/* Typography  */
+
+h1, h2, p{
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #090909;
+    text-decoration: none;
+}
+
+/* Layout  */
+
+
+header,
+.nav-left,
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.nav-left {
+    align-items: center;
+}
+
+.nav img {
+    padding: 0.1875em;
+}
+
+.nav-left p {
+    font-size: 0.875rem;
+    color: #0E0E0E;
+    font-weight: 900;
+}
+
+.nav-right {
+    gap: 1rem;
+    margin-left: auto;
+    list-style-type: none;
+    
+}
+
+.nav-right p {
+    font-size: 0.75rem;
+    margin-left: 0.83em;
+    font-weight: 900;
+}
+
+.first-section {
+    background-image: url('/images/article.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: whitesmoke;
+}
+
+.color-white {
+    color: whitesmoke
+}
+
+.first-section h1 {
+    max-width: 60%;
+}
+
+.short-message {
+    max-width: 60%;
+}
+
+.second-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 3.125em;
+    grid-column-gap: 1.625em;
+    margin: 2.125em;
+
+}
+
+.blog img {
+    width: 100%;
+    object-fit: cover;
+    
+}
+
+.blog h2 {
+    margin: 0.5625em 0;
+}
+
+.view {
+    margin:  0 auto;
+    border: none;
+    background-color: transparent;
+    text-decoration: underline;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+
+.view,
+footer {
+    text-align: center;
+}
+
+footer {
+    margin-top: 0;
+    background-color: #202020;
+    padding: 2.3125em;
+    font-size:  0.75rem;
+}
+
+.footer-head {
+    color: #ECECEC;
+}
+
+.footer-body {
+    color: #D7D7D7;
+    margin-top: 3px;
+}
+
+
+/* media queries  */
+@media (min-width: 414px) {
+    header {
+        gap: 5.375em;
+        padding: 1em;   
+    }
+
+    .first-section {
+        padding: 20% 1% 1%;
+    }
+
+    .date {
+        font-size: 0.75rem;
+    }
+    
+    .first-section h1 {
+        font-size: 2rem;  
+    }
+
+    
+}
+
+
+
+@media (min-width: 780px) {
+
+    .date {
+        font-size: 1rem
+    }
+
+    .first-section h1 {
+        font-size: 2.5rem;
+        
+    }
+
+    .second-section {
+        grid-template-columns: 1fr 1fr 1fr;
+        
+    }
+
+    .view {
+         grid-column: 2/3;
+    }
+}
+
+

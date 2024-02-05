@@ -1,0 +1,28 @@
+.section-bio {
+    display: flex;
+    flex-direction:column;
+    gap: 1em;
+    margin-left: 1.25em;
+    
+}
+
+.section-bio img {
+    width: 182px;
+}
+
+.section-story {
+    margin: 0  1.25em;
+}
+
+/* media queries  */
+@media (min-width: 700px){
+    .section-bio {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .profile h1 {
+        font-size: 2.25rem;
+    }
+}
+
